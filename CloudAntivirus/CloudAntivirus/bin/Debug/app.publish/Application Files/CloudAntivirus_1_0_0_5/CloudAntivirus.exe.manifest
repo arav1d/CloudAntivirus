@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="CloudAntivirus.exe" version="1.0.0.5" publicKeyToken="ed513c9d283eef59" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="logo.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="CloudAntivirus" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="CloudAntivirus.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CloudAntivirus.exe" size="206336">
+      <assemblyIdentity name="CloudAntivirus" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>hDcav5RpHUbgpAoXSkgCOIfc6L0PX8tU5NiQuK0L5wY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="1116760">
+      <assemblyIdentity name="EntityFramework" version="5.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PoNKnbJ6KecCojr5W66/YqltD4tkc9jUL2AUPZPv3LU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="315904">
+      <assemblyIdentity name="Newtonsoft.Json" version="4.5.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nKXHBK4yavSgz6FWr2j+RubQLLlP4UpkR96j8jtHBw4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Data.SqlServerCe.dll" size="470240">
+      <assemblyIdentity name="System.Data.SqlServerCe" version="4.0.0.1" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Pgwr5n4Vjx9FK9fz99hdOShMCN9O2brVI/7DECVACCY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="CloudAntivirus.exe.config" size="1420">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PZy7E3X1ZrdD45GxoMMU1k7ePujPIGoNE9dhdeJ27Ro=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="logo.ico" size="82726">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Zv4qUjqygkJyFvn/bEU2L3dC/a6kzuVgysqSlGEY76A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MyDatabase.sdf" size="86016" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RRSkPRN2Q3Tjv5i5qRKKj9daLQYIeN9TdPmfSw+Ccfw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sqlceca40.dll" size="349920">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/C1lH/CsCAB0Rgo/2f3WCIJ08KITHTlw9LfIguhm5EU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sqlcecompact40.dll" size="90848">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ChjIdDfPfhfZnyMg45RB52kJQVE3XswC+xSew83LkO0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sqlceer40EN.dll" size="154336">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>d/h3vHHAy0iEXZ3yLqfTq8BrUpVr01KsNauj+Jxf7+c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sqlceme40.dll" size="67296">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1zLdCHyo0bBvEohtwYF7tLbd5cy/4cgOK2yiOA7hvYY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sqlceoledb40.dll" size="171744">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ifny5e69VkVj/LZNox9yJN32y4ACfkgiUef99t2GYnA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sqlceqp40.dll" size="642784">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4WUfaCOnGjYdv6eCGGVwwd1oF/G6soRj+Odpr1t+7EA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sqlcese40.dll" size="406240">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9VV8lrUvjA8dN0wSu2KYG9g0LyJOVq6GiKQZcxw3QXM=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Aravindhan-PC\Aravindhan" issuerKeyHash="4eff0e2871a05cf391702b6e7b8f0ccd97088f30" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>eXrpVZm8xG+RWWckmao05I1tgR/51WWHgEEliNJf4vE=</DigestValue></Reference></SignedInfo><SignatureValue>UuAE0AtVYpDdvEq9nAKP69a0M+qyQYtpEmlQVkF/wzCWUdJzyGFForRvj4HspEyO6GBZoF4FhddmtZPcwQcEIAdmMx/lQyY5eEzcQf8EYSt6jvJ6Q20FXeFJXTxfXfdl4N/o4YeIXu/pNQWHobAz5qvaebVkmxhB+qNioh/mwfo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pTRDDlsgTVEtfzqE4YakKy+yHEmwfKInQKpLqK4keLy3Jyh2j9BP0HGB1ET3WpivgvAm+8V8i7zpqV7Is/FD1Yw5RndD8T45ooiZrwBh3aara/2st94HclyeNziy7+eEFDD98tpQXT/1l7M8Z67EKkVPjdCyXMdGYfUoUrStbEU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f1e25fd2882541808765d5f91f816d8de434aa99246759916fc4bc9955e97a79" Description="" Url=""><as:assemblyIdentity name="CloudAntivirus.exe" version="1.0.0.5" publicKeyToken="ed513c9d283eef59" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Aravindhan-PC\Aravindhan</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>zmVTtiP0KErjOipC5RZDCrTL84oq3irIn9JQ+8ughd0=</DigestValue></Reference></SignedInfo><SignatureValue>ndwLP4ss9YdUjLCzApYBpC5qBQ31fkQCqJsnI5E+ECmw5FzixkmMSMzt4/iMti6rnkg07VbGamisskm+9yj+414Tfn+Du0TaL4+US1J3Cy1DGZec+y19xA+R28ovbmhslTnInxWI+qphoMrhs14Sbo48CysEvKUEgtLEVaZQlsU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pTRDDlsgTVEtfzqE4YakKy+yHEmwfKInQKpLqK4keLy3Jyh2j9BP0HGB1ET3WpivgvAm+8V8i7zpqV7Is/FD1Yw5RndD8T45ooiZrwBh3aara/2st94HclyeNziy7+eEFDD98tpQXT/1l7M8Z67EKkVPjdCyXMdGYfUoUrStbEU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB+TCCAWKgAwIBAgIQH7scZhhi271BR3rrG1zWfDANBgkqhkiG9w0BAQsFADA7MTkwNwYDVQQDHjAAQQByAGEAdgBpAG4AZABoAGEAbgAtAFAAQwBcAEEAcgBhAHYAaQBuAGQAaABhAG4wHhcNMTMwMjA0MDU1MTUwWhcNMTQwMjA0MTE1MTUwWjA7MTkwNwYDVQQDHjAAQQByAGEAdgBpAG4AZABoAGEAbgAtAFAAQwBcAEEAcgBhAHYAaQBuAGQAaABhAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKU0Qw5bIE1RLX86hOGGpCsvshxJsHyiJ0CqS6iuJHi8tycodo/QT9BxgdRE91qYr4LwJvvFfIu86aleyLPxQ9WMOUZ3Q/E+OaKIma8AYd2mq2v9rLfeB3Jcnjc4su/nhBQw/fLaUF0/9ZezPGeuxCpFT43QslzHRmH1KFK0rWxFAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAGP/ZNScvY/wkNZCISFMt8viFMnUtL1Vv3I/qEjO4C9f7q0fx8wOiHDV1zwO2ZcKzJm4NciB6pmcLwabgIx4DXczp+hwM8sfat1LCifPSLX3Np+LlrCX4y/hgkMn4cN7QRwfXV6HUn0RfcreJCYWDEL2uOg+bYJNtuLqYpGFwrPs=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

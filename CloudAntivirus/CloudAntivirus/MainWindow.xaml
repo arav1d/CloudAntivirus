@@ -1,0 +1,11 @@
+﻿<Window x:Class="CloudAntivirus.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:local="clr-namespace:SystemMonitor"
+        Title="Cloud Antivirus"
+        Icon="logo.ico">
+    <WindowsFormsHost>
+        <local:Form1></local:Form1>
+    </WindowsFormsHost>
+</Window>
